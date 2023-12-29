@@ -37,5 +37,6 @@
   }
 }
 .content h1{
-  color:rgba(138, 17, 138, 0.884);
+  color:rgb(170, 167, 167);
+  text-align: left !important;
 }

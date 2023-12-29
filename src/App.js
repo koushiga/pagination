@@ -4,13 +4,15 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Pagination from './Pagination';
 import PhotoList from './components/PhotoList';
+import Header from './Header';
+import Container from 'react-bootstrap/Container';
 
 
 function App() {
 
   const [photos,setPhotos]=useState([]);
   const[currentPage,setCurrentPage]=useState(1);
-  const[postPerPage,setPostPerPage]=useState(8);  
+  const[postPerPage,setPostPerPage]=useState(6);  
 
 
   useEffect(()=>{
@@ -27,8 +29,10 @@ function App() {
 
   return (
     <div className="App">
+      <Header/>
       <div className='content'>
-        <h1>Pagination</h1>  
+        <Container>
+        <h1>Movies:</h1>  
         <PhotoList photos={currentPost}/>
         <Pagination      
         totalPosts={photos.length}
@@ -36,6 +40,7 @@ function App() {
         setCurrentPage={setCurrentPage}
         currentPage={currentPage}
         />
+        </Container>
       </div>
     </div>
   )
