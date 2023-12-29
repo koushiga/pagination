@@ -1,0 +1,33 @@
+.card{
+    background:whitesmoke;
+    border-radius: 20px;
+    margin:20px 40px;
+    box-shadow: 0 0 10px black;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    width:300px;
+    height: auto;
+}
+
+.card_image img{
+    width:250px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.card_info{
+    margin-top: 10px;
+}
+
+.card_info p{
+    margin-bottom: 10px;
+    color:black;
+}
+.card_info button{
+    border-radius: 5px;
+    background-color:#e5ff008e;
+    color: black;
+    border: none;
+    font-weight: bold;
+}

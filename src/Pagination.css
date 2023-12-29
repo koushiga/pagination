@@ -1,0 +1,18 @@
+.pagination-btn{
+    margin-bottom:20px ;
+}
+
+
+.pagination-btn button{
+    margin: 0 10px;
+    padding: 10px 10px;
+    background-color:rgb(231,231,231);
+    border:none;
+    border-radius: 5px;
+    font-size: large;
+}
+
+.pagination-btn button.active{
+    background-color: #ffee008e;
+    color: #101010;
+}
